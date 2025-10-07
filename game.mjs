@@ -137,7 +137,7 @@ function keepBallOnPitch(ball) {
     rightScore += 1;
     putBallInCenterOfPitch(ball);
     giveBallRandomSpeed(ball);
-    return; //Ferdig
+    return;
   }
 
   //mål til venstre (ball ut høyre)
@@ -287,8 +287,8 @@ canvas.addEventListener("mousemove", onMouseMove);
 window.addEventListener("keydown", onKeyDown);
 
 //cheat keys
-function onKeyDown(e){
-  const k = e.key;
+function onKeyDown(event){
+  const k = event.key;
 
   //L = frys NPC i 2 sek
   if (k === "l" || k === "L"){
